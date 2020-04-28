@@ -6,7 +6,8 @@ RUN apt-get update && \
     apt-get install -y ca-certificates \
                        curl \
                        iptables \
-                       jq
+                       jq \
+                       gnupg2
 
 RUN curl -JO https://repo.nordvpn.com/deb/nordvpn/debian/pool/main/nordvpn-release_1.0.0_all.deb
 RUN dpkg -i nordvpn-release_1.0.0_all.deb
